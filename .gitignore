@@ -20,7 +20,6 @@ vadose/
 
 # Images/
 *.tif
-*.png
 *.jpeg
 *.bmp
 *.gif
