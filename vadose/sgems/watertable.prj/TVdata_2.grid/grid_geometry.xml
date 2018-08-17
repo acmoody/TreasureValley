@@ -1,0 +1,12 @@
+<!DOCTYPE gridGeometry>
+<Grid type="Point_set" name="TVdata_2">
+ <Geometry size="549"/>
+ <Properties>
+  <GsTLGridProperty filepath="properties/property__BOHalt.sgems" type="Continuous" name="BOHalt"/>
+  <GsTLGridProperty filepath="properties/property__DTW.sgems" type="Continuous" name="DTW"/>
+  <GsTLGridProperty filepath="properties/property__TotalDepth.sgems" type="Continuous" name="TotalDepth"/>
+  <GsTLGridProperty filepath="properties/property__WLalt.sgems" type="Continuous" name="WLalt"/>
+ </Properties>
+ <Regions/>
+ <PropertyGroups/>
+</Grid>

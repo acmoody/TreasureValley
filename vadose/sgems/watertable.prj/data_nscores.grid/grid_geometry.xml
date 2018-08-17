@@ -1,0 +1,12 @@
+<!DOCTYPE gridGeometry>
+<Grid type="Point_set" name="data_nscores">
+ <Geometry size="255"/>
+ <Properties>
+  <GsTLGridProperty filepath="properties/property__ALTdtw.sgems" type="Continuous" name="ALTdtw"/>
+  <GsTLGridProperty filepath="properties/property__ALTdtw_nscore.sgems" type="Continuous" name="ALTdtw_nscore"/>
+  <GsTLGridProperty filepath="properties/property__DTWmed.sgems" type="Continuous" name="DTWmed"/>
+  <GsTLGridProperty filepath="properties/property__DTWmed_nscore.sgems" type="Continuous" name="DTWmed_nscore"/>
+ </Properties>
+ <Regions/>
+ <PropertyGroups/>
+</Grid>

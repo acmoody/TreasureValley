@@ -1,0 +1,10 @@
+<!DOCTYPE gridGeometry>
+<Grid type="Point_set" name="tvdata">
+ <Geometry size="515"/>
+ <Properties>
+  <GsTLGridProperty filepath="properties/property__DTW_m.sgems" type="Continuous" name="DTW_m"/>
+  <GsTLGridProperty filepath="properties/property__WLalt_m.sgems" type="Continuous" name="WLalt_m"/>
+ </Properties>
+ <Regions/>
+ <PropertyGroups/>
+</Grid>

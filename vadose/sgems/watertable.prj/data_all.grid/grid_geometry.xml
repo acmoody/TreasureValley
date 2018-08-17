@@ -1,0 +1,17 @@
+<!DOCTYPE gridGeometry>
+<Grid type="Point_set" name="data_all">
+ <Geometry size="272"/>
+ <Properties>
+  <GsTLGridProperty filepath="properties/property__ALTdtw.sgems" type="Continuous" name="ALTdtw"/>
+  <GsTLGridProperty filepath="properties/property__DTWmed.sgems" type="Continuous" name="DTWmed"/>
+  <GsTLGridProperty filepath="properties/property__unitScaling(DTWmed).sgems" type="Continuous" name="unitScaling(DTWmed)"/>
+  <GsTLGridProperty filepath="properties/property__unitScaling(DTWmed) less than 0.0412148.sgems" type="Continuous" name="unitScaling(DTWmed) less than 0.0412148"/>
+  <GsTLGridProperty filepath="properties/property__unitScaling(DTWmed) less than 0.0707539.sgems" type="Continuous" name="unitScaling(DTWmed) less than 0.0707539"/>
+  <GsTLGridProperty filepath="properties/property__unitScaling(DTWmed) less than 0.121983.sgems" type="Continuous" name="unitScaling(DTWmed) less than 0.121983"/>
+  <GsTLGridProperty filepath="properties/property__unitScaling(DTWmed) less than 0.192649.sgems" type="Continuous" name="unitScaling(DTWmed) less than 0.192649"/>
+ </Properties>
+ <Regions/>
+ <PropertyGroups>
+  <GsTLGridPropertyGroup memberProperties="unitScaling(DTWmed) less than 0.0412148;unitScaling(DTWmed) less than 0.0707539;unitScaling(DTWmed) less than 0.121983;unitScaling(DTWmed) less than 0.192649" type="ContinuousIndicator" name="unitScaling(DTWmed) Quintile indicator"/>
+ </PropertyGroups>
+</Grid>

@@ -55,8 +55,8 @@ df_DMR = temp
 del temp
 
 # Make some plots
-sorted_cols = df_DMR.groupby(axis=1,level=0).sum().sum().sort_values(ascending=False).index
-fig1 = df_DMR[sorted_cols].groupby(axis=1,level=0,sort=False).sum().plot(kind='area',cmap='tab10',alpha=.85,linewidth=1,figsize=(12,6))
+sorted_cols = df_DMR.groupby(axis=1, level=0).sum().sum().sort_values(ascending=False).index
+fig1 = df_DMR[sorted_cols].groupby(axis=1, level=0, sort=False).sum().plot(kind='area',cmap='tab10',alpha=.85,linewidth=1,figsize=(12,6))
 ax = fig1.axes
 ax.set_xlim(360,581)
 ax.set_ylabel('Effluent (AF)')
