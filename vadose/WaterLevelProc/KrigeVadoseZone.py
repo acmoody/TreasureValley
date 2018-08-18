@@ -166,8 +166,10 @@ alt_rast = rasterio.open(f, 'w',driver='GTiff',
                          crs = crs, transform = krige_aff)
 alt_rast.write(np.flipud(z_alt),1)
 alt_rast.close()
+#%%
 z_dtw_us = np.empty(shape=(round(z_dtw.shape[0]/.06),round(z_dtw.shape[1]/.06)))
-rasterio.warp.reproject(z_dtw,z_dtw_us,
+z_dtw_us = np.empty(shape=dem.shape)
+warp.reproject(z_dtw,z_dtw_us,
                           src_transform = krige_aff,
                           dst_transform = affine_src,
                           src_crs = crs,
@@ -175,7 +177,8 @@ rasterio.warp.reproject(z_dtw,z_dtw_us,
                           resampling=Resampling.bilinear)
 #%%
 z_alt_us = np.empty(shape=(round(z_dtw.shape[0]/.06),round(z_dtw.shape[1]/.06)))
-rasterio.warp.reproject(z_alt,z_alt_us,
+z_alt_us = np.empty(shape=dem.shape)
+warp.reproject(z_alt,z_alt_us,
                           src_transform = krige_aff,
                           dst_transform = affine_src,
                           src_crs = crs,
@@ -187,7 +190,7 @@ rasterio.warp.reproject(z_alt,z_alt_us,
 # TODO: Check to see if everything is aligned. DEM appears to be upside down...
 z1=(dem - (z_dtw_us * .3048))[np.newaxis,...]
 z2 = (z_alt_us*.3048)[np.newaxis,...]
-zavg = np.nanmean(np.vstack([z1,z2]),axis=2)
+zavg = np.nanmean(np.vstack([z1,z2]),axis=0)
 #%%
 fig,ax = plt.subplots(1,3)
 ax[0].contourf(z_dtw_us)
